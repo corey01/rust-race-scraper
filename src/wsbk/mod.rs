@@ -8,7 +8,7 @@ pub struct RaceWeekend {
     url: String
 }
 
-const BASE_URL: &str = "https://www.worldsbk.com/"; 
+const BASE_URL: &str = "https://www.worldsbk.com"; 
 
 pub fn wsbk_scraper() -> Vec<RaceWeekend>{
     let response = reqwest::blocking::get("https://www.worldsbk.com/en/calendar");
