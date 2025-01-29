@@ -11,8 +11,8 @@ fn main() {
     let bsb_races = bsb::bsb_scraper();
     let motogp_races = motogp::motogp_scraper();
 
-    csv_printer(wsbk_races, "wsbk.csv").unwrap();
-    csv_printer(bsb_races, "bsb.csv").unwrap();
-    csv_printer(motogp_races, "motogp.csv").unwrap();
+    csv_printer(wsbk_races, "output/wsbk.csv").unwrap();
+    csv_printer(bsb_races, "output/bsb.csv").unwrap();
+    csv_printer(motogp_races, "output/motogp.csv").unwrap();
 }
 
